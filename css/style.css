@@ -163,6 +163,7 @@ Primary use: Multipurpose Template
 @import url("icons.css");
 @import url("icomoon.css");
 @import url("font-awesome-brands.css");
+@import url(https://db.onlinewebfonts.com/c/9dc5a620301a9b7934ea10863bc3efc6?family=Vultura+Regular); 
 
 
 /* ==============================
@@ -194,7 +195,7 @@ Primary use: Multipurpose Template
     --color-gray-light-6: #bbb;
     --color-dark-mode-gray-1: rgba(255,255,255, .7);
     --color-dark-mode-gray-2: rgba(255,255,255, .1275);
-    --color-primary-1: #4567ed;
+    --color-primary-1: #000000;
     --color-primary-1-a: #375ae3;    
     --color-primary-light-1: #e3effe;
     --color-primary-light-1-a: #bcd1f1;
@@ -982,7 +983,17 @@ hr.thick{
     font-size: 70px;
     font-weight: 500;
     line-height: 1.085;
-    letter-spacing: -0.035em;
+    letter-spacing: +0.030em;
+    font-family: "Vultura Regular"; 
+}
+.hs-title-1p{
+    margin-top: 0;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 1.085;
+    letter-spacing: +0.00em;
+    color: #ffffff;
+    font-family: "Vultura Regular"; 
 }
 .hs-title-2{
     margin-top: 0;
@@ -1267,7 +1278,7 @@ hr.thick{
 
 .link-circle-1{
     margin-left: -7px;
-    padding-left: 27px;
+    padding-left: 33px;
 }
 .link-circle-1:before{
     content: "";
@@ -1284,7 +1295,7 @@ hr.thick{
     transition: all .5s var(--ease-elastic-2);
 }
 .link-circle-1 .link-strong-hovered{
-    left: 27px;
+    left: 33px;
 }
 .light-content .link-circle-1:before{
     border-color: #fff;
@@ -1762,8 +1773,8 @@ a:not(.no-hover):hover .btn-animate-y-2{
 }
 .big-icon-link-gradient{
     display: inline-block;
-    font-size: 48px;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 300;
     line-height: 1.3;
     text-decoration: none;
     letter-spacing: -0.02em;
@@ -2685,10 +2696,10 @@ textarea:-webkit-autofill:focus{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin-top: 8px;
-    font-size: 16px;
+    font-size: 20px;
     color: var(--color-dark-1);
     text-decoration: none;
     border: 1px solid var(--color-dark-1);
@@ -4656,11 +4667,19 @@ a.logo:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.section-title{
+.section-title-center{
     font-size: 56px;
     font-weight: 500;
     line-height: 1.107;
     letter-spacing: -0.03em;
+    text-align: center;
+}
+.section-title{
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1.107;
+    letter-spacing: -0.01em;
+    font-family: "Vultura Regular"; 
 }
 .section-title-tiny{
     font-size: 19px;
@@ -4731,6 +4750,15 @@ a.logo:hover{
 .light-content .section-title-descr{
     color: var(--color-gray-light-6);
 }
+.section-descr-center{
+    margin-top: 0;
+    color: var(--color-gray-1);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.005em;
+    text-align: center;
+}
 .section-descr{
     margin-top: 0;
     color: var(--color-gray-1);
@@ -4738,6 +4766,15 @@ a.logo:hover{
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: -0.005em;
+}
+.section-descr-p{
+    margin-top: 0;
+    color: var(--color-gray-1);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.005em;
+    color: #ffffff;
 }
 .light-content .section-descr{
     color: #fff;
@@ -5787,6 +5824,7 @@ img.services-image{
     background: #fff;
     box-shadow: var(--box-shadow-block);
     transition: all .2s var(--ease-default);
+    border-radius: 20px 20px 20px 20px;
 }
 .services-3-item:hover{
     transform: translateY(-5px);
@@ -6660,7 +6698,8 @@ img.services-image{
    ============================== */
 
 .number-title{
-    font-size: 80px;
+    font-size: 32px;
+    margin-bottom: 12px;
     font-weight: 500;
     line-height: 1;
 }
@@ -6872,7 +6911,7 @@ img.services-image{
 .works-filter a{
     display: inline-block;
     position: relative;
-    margin-left: 48px;
+    margin-left: 40px;
     color: var(--color-gray-1);
     text-decoration: none;
     -webkit-transition: var(--transition-default);
@@ -7225,7 +7264,7 @@ img.services-image{
 }
 .work-item{
     width: 25%;;
-    margin: 0;  
+    margin: 0;
 }
 .work-grid-2 .work-item{
     width: 49.99%;
@@ -7279,6 +7318,7 @@ img.services-image{
     position: relative;
     overflow: hidden;
     transform: rotate(0.001deg) translateZ(0);
+    border-radius: 20px 20px 20px 20px;
 }
 .work-img-bg{
     position: absolute;
@@ -7350,6 +7390,61 @@ img.services-image{
 .work-item a:hover .work-intro{
     transform: translate(10px, -10px);
 }
+
+/* Work item P hover state */
+.work-item-p .work-intro{
+position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000000;
+  border-radius: 20px 20px 20px 20px;
+}
+.work-item-p .work-title {
+  font-size: 22px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: 0.5s ease;
+}
+.work-item-p:hover .work-intro {
+  opacity: 0.8;
+  border-radius: 0px 0px 0px 0px;
+  transition: 0.5s ease;
+}
+.work-item-p:hover .work-title {
+  font-size: 22px;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: 0.5s ease;
+}
+.work-item-p:hover .work-img{
+  border-radius: 0px 0px 0px 0px;
+  transition: 0.5s ease;
+}
+.work-item-p:hover .work-img img{
+  border-radius: 0px 0px 0px 0px;
+  transform: scale(1.07);
+  transition: 0.5s ease;
+}
+.work-item-p .work-img,
+.work-item-p .work-img > img{    
+    transition: all 0.5s var(--ease-out-medium);
+}
+
 
 /* Work item hover state alt */
 .works-grid.work-grid-hover-alt .work-item .work-img{ 
@@ -7548,6 +7643,16 @@ img.services-image{
 .work-full-media img{
     max-width: 100%;
     height: auto;
+}
+.work-full-media-p img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.work-full-media-p clearlist{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
 .work-navigation.light-content a,
 .work-navigation.light-content a:visited{ 
@@ -9221,12 +9326,12 @@ a.portfolio-5-link:hover .portfolio-5-title span{
 
 .contact-1-left{
     width: 100%;
-    border-radius: 50px 0 0 50px;
-    background: var(--color-dark-1);
+    border-radius: 20px 0 0 20px;
+    background: var(--color-dark-2);
 }
 .contact-1-right{
     width: 100%;
-    border-radius: 0 50px 50px 0;
+    border-radius: 0 20px 20px 0;
     background: var(--color-gray-light-2);
 }
 .contact-1-line{
@@ -9235,11 +9340,10 @@ a.portfolio-5-link:hover .portfolio-5-title span{
 }
 .contact-1-title{
     margin-bottom: 12px;
-    font-size: 15px;
+    font-size: 32px;
     font-family: var(--font-alt);
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
+    font-weight: 500;
+    letter-spacing: 0.01em;
 }
 .contact-1-text{
     font-size: 30px;
@@ -9259,7 +9363,7 @@ a.portfolio-5-link:hover .portfolio-5-title span{
     opacity: .85;
 }
 .contact-1-link a{
-    font-size: 16px;
+    font-size: 20px;
     color: rgba(255,255,255, .85);    
     text-decoration: none;
     background-image: linear-gradient(rgba(255,255,255, .65), rgba(255,255,255, .65)), linear-gradient(#fff, #fff);
@@ -9393,14 +9497,16 @@ a.portfolio-5-link:hover .portfolio-5-title span{
 .google-map{
     position: relative;
 	background: var(--color-dark-1);
+    border-radius: 0 20px 20px 0;
 }
 .google-map > iframe{
     display: block;
     width:100%;
-    height: 485px;
+    height: 610px;
     position: relative;
 	background-color: var(--color-dark-1) !important;
     z-index: 1;
+    border-radius: 0 20px 20px 0;
 }
 .map-section{
     width: 100%;
@@ -9414,6 +9520,7 @@ a.portfolio-5-link:hover .portfolio-5-title span{
     cursor: pointer; 
     -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
     transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    border-radius: 0 20px 20px 0;
 }
 .map-section:hover{
     background: rgba(245,245,245, .8);
@@ -9572,6 +9679,7 @@ a.portfolio-5-link:hover .portfolio-5-title span{
 
 .footer{
      font-size: 16px;
+     color: var(--color-gray-light-1);
 }
 .footer a{
     transition: all 0.17s var(--ease-default);

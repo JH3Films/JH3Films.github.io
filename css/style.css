@@ -984,11 +984,12 @@ hr.thick{
     font-weight: 500;
     line-height: 1.085;
     letter-spacing: +0.030em;
+    color: #ffffff;
     font-family: "Vultura Regular"; 
 }
 .hs-title-1p{
     margin-top: 0;
-    font-size: 70px;
+    font-size: 4em;
     font-weight: 500;
     line-height: 1.085;
     letter-spacing: +0.00em;
@@ -6703,6 +6704,13 @@ img.services-image{
     font-weight: 500;
     line-height: 1;
 }
+.number-title-p{
+    font-size: 32px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    line-height: 1;
+}
+
 .number-descr{
     color: var(--color-gray-1);
 }

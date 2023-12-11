@@ -4,15 +4,15 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 <html lang="en">
     <head>
         
-        <title>JH3 Films - Portfolio</title>
-        <meta name="description" content="JH3 Films - Portfolio">  
+        <title>JH3 Films - Mentalese Express</title>
+        <meta name="description" content="JH3 Films - Showreel">  
         <meta charset="utf-8">
         <meta name="author" content="JH3 Films">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
         <!-- Favicon -->
         <link rel="icon" href="images/jh3-favicon.png" type="image/png" sizes="any">
-        <link rel="icon" href="images/jh3-favicon.png" type="image/svg+xml">       
+        <link rel="icon" href="images/jh3-favicon.png" type="image/svg+xml">        
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -47,7 +47,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <div class="page" id="top">
             
             <!-- Navigation Panel -->
-            <nav class="main-nav dark light-after-scroll transparent stick-fixed wow-menubar">
+            <nav class="main-nav dark transparent light-after-scroll stick-fixed wow-menubar">
                 <div class="main-nav-sub full-wrapper">
                     
                     <!-- Logo  (* Add your text or image to the link tag. Use SVG or PNG image format. 
@@ -83,7 +83,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             
                             <!-- Item With Sub -->
                             <li>
-                                <a href="#portfolio">Portfolio </a>
+                                <a href="./portfolio">Portfolio </a>
                                 
                             </li>
                             <!-- End Item With Sub -->
@@ -119,24 +119,30 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
             <main id="main">
             
                 <!-- Header Section -->
-                <section class="page-section bg-dark-1 bg-dark-alpha-60 parallax-5" style="background-image: url(images/coming-soon-bg.jpg)" id="home">
-                    <div class="container position-relative pt-30 pt-sm-50">
+                <section class="home-section bg-dark-1 bg-dark-alpha-30 light-content parallax-5" style="background-image: url(images/showreel.jpg)" id="home">
+                    <div class="position-absolute top-0 bottom-0 start-0 end-0 bg-gradient-dark opacity-07"></div>
+                    <div class="container position-relative min-height-100vh d-flex align-items-end pt-100 pb-100">
                             
                         <!-- Section Content -->
-                        <div class="text-center">
+                        <div class="home-content text-center">
                             <div class="row">
                                 
                                 <!-- Page Title -->
                                 <div class="col-md-8 offset-md-2">
+                                     <ul class="nav nav-tabs tpl-minimal-tabs wow fadeInUp p-3" data-splitting="chars" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                             <a href="#" class="filter active" role="button" aria-pressed="true" data-filter="*">Reel</a>
+                                        </li>
+                                    </ul>
                                         
                                     <h1 class="hs-title-1 mb-20">
-                                        <span class="wow charsAnimIn" data-splitting="chars">Portfolio</span>
+                                        <span class="wow charsAnimIn" data-splitting="chars" data-wow-delay="0.2s">Showreel 2023</span>
                                     </h1>
                                     
                                     <div class="row">
-                                        <div class="col-md-10 offset-md-1">
-                                            <p class="section-descr-p mb-0 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">
-                                                It ain't much (for now), but it's honest work.
+                                        <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 pb-3">
+                                            <p class="section-descr mb-0 wow charsAnimIn" data-splitting="chars" data-wow-delay="0.4s">
+                                               
                                             </p>
                                         </div>
                                     </div>
@@ -147,118 +153,107 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             </div>                            
                         </div>
                         <!-- End Section Content -->
-                            
-                    </div>              
+                        
+                        <!-- Scroll Down -->
+                        <div class="local-scroll scroll-down-wrap wow fadeInUp" data-wow-offset="0">
+                            <a href="#start" class="scroll-down"><i class="mi-chevron-down"></i><span class="visually-hidden">Scroll to the next section</span></a>
+                        </div>
+                        <!-- End Scroll Down -->
+                        
+                    </div>
                 </section>
                 <!-- End Header Section -->
                 
                 
-                <!-- Portfolio Section -->
-                <section class="page-section" id="portfolio">
-                    <div class="full-wrapper position-relative">
-                        <!-- Nav Tabs -->
-                                <div class="text-center mb-40 mb-xxs-30 wow fadeInUp" data-wow-delay="0.4s">
-                                    <ul class="nav nav-tabs tpl-minimal-tabs animate" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                             <a href="#" class="filter active" role="button" aria-pressed="true" data-filter="*">All</a>
-                                        </li>
-                                        
-                                        <li class="nav-item" role="presentation">
-                                            <a href="#short" class="filter" role="button" aria-pressed="false" data-filter=".short">Short</a>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <a href="#trailer" class="filter" role="button" aria-pressed="false" data-filter=".trailer">Trailer</a>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <a href="#reel" class="filter" role="button" aria-pressed="false" data-filter=".reel">Reel</a>
-                                        </li>
-                                        <!--li class="nav-item" role="presentation">
-                                            <a href="#commercial" class="filter" role="button" aria-pressed="false" data-filter=".commercial">Commercial</a>
-                                        </li-->
-                                    </ul>
-                                </div>
-                        <!-- End Nav Tabs -->                    
-                        
-                        <!-- Works Grid -->
-                        <ul class="works-grid work-grid-3 work-grid-gut hover-black hide-titles wow fadeInUp" data-wow-delay="0.8s" id="work-grid">
-                                                    
-                            <!-- Work Item (External Page) -->
-                            <li class="work-item mix short">
-                                <a href="./mentalese-express" class="work-ext-link">
-                                    <div class="work-img">
-                                        <div class="work-img-bg"></div>
-                                        <img src="images/portfolio/projects-thumb.gif" data-original="images/mentalese-express.jpg" alt="Work Description" class="img-lazy-work" />
-                                    </div>
-                                    <div class="work-intro">
-                                        <h3 class="work-title">Mentalese Express</h3>
-                                        <div class="work-descr">
-                                            Short Film
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <!-- End Work Item -->
-                            <!-- Work Item (External Page) -->
-                            <li class="work-item mix trailer">
-                                <a href="./absent-without-leave" class="work-ext-link">
-                                    <div class="work-img">
-                                        <div class="work-img-bg"></div>
-                                        <img src="images/portfolio/projects-thumb.gif" data-original="images/absent-without-leave.jpg" alt="Work Description" class="img-lazy-work" />
-                                    </div>
-                                    <div class="work-intro">
-                                        <h3 class="work-title">Absent without Leave</h3>
-                                        <div class="work-descr">
-                                            Trailer
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <!-- End Work Item -->
-                            <!-- Work Item (External Page) -->
-                            <li class="work-item mix trailer">
-                                <a href="./flowers-of-taipei" class="work-ext-link">
-                                    <div class="work-img">
-                                        <div class="work-img-bg"></div>
-                                        <img src="images/portfolio/projects-thumb.gif" data-original="images/flowers-of-taipei.jpg" alt="Work Description" class="img-lazy-work" />
-                                    </div>
-                                    <div class="work-intro">
-                                        <h3 class="work-title">Flowers of Taipei</h3>
-                                        <div class="work-descr">
-                                            Trailer
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <!-- End Work Item -->
-                            <!-- Work Item (External Page) -->
-                            <li class="work-item mix reel">
-                                <a href="./showreel" class="work-ext-link">
-                                    <div class="work-img">
-                                        <div class="work-img-bg"></div>
-                                        <img src="images/portfolio/projects-thumb.gif" data-original="images/showreel.jpg" alt="Work Description" class="img-lazy-work" />
-                                    </div>
-                                    <div class="work-intro">
-                                        <h3 class="work-title">Showreel 2023</h3>
-                                        <div class="work-descr">
-                                            Reel
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <!-- End Work Item -->
+                <!-- Section -->
+                <section class="page-section" id="start">
+                    <div class="container relative">
+                        <!-- Brief -->
+                        <div class="row mb-80 mb-sm-40 p-1">
+                          
+                                <p class="section-descr wow fadeInUp text-center col-sm-8 offset-sm-2" data-wow-delay="0">
+                                  Composed of works up to 2023.
+                                </p>
                             
-                        </ul>
-                        <!-- End Works Grid -->
+                        </div>
+                        <!-- End Brief-->
+
+                        <div class="row mb-80 mb-sm-40">
+                            <!-- Project Details -->
+                            <div class="col-md-4 mb-sm-40 wow fadeInUp" data-wow-delay="0.3s">                               
+                               <div class="block-sticky">
+                               
+                                   <h2 class="h3 mb-40">Info</h2>                         
+                                   
+                                   <div class="row text-gray small">
+                                       <div class="col-sm-4">
+                                           <b>Year</b>
+                                       </div>
+                                       <div class="col-sm-8">
+                                           2023
+                                       </div>
+                                   </div>
+                                   
+                                   <hr class="mb-20" />
+                                   <div class="row text-gray small">
+                                       <div class="col-sm-4">
+                                           <b>Length</b>
+                                       </div>
+                                       <div class="col-sm-8">
+                                           2 minutes
+                                       </div>
+                                   </div>  
+                                   
+                                   <hr class="mb-20" />   
+                     
+                                   <div class="row text-gray small">
+                                       <div class="col-sm-4">
+                                           <b>Role</b>
+                                       </div>
+                                       <div class="col-sm-8">
+                                           Editing
+                                       </div>
+                                   </div>                          
+                                   
+                                   <hr class="mb-20" />
+                               
+                               </div>                            
+                            </div>
+                            <!-- End Project Details -->
+                           
+                        
+                       
+                            <div class="col-md-8">                           
+                                <div class="mb-n30 wow fadeInUp" data-wow-delay="0.3s">
+                                    <!-- Work Video -->
+                                    <h2 class="h3 mb-20">Video</h2>                         
+                                        <div class="hover-white hide-titles m-md-5 m-1 mb-5">
+                                            <div class="work-item-p mt-n10 wow fadeInUp wch-unset" data-wow-delay="0.5s" data-wow-duration="1s" data-wow-offset="0">
+                                                <a href="https://www.youtube.com/watch?v=9BsiJWaPyQ4" class="work-lightbox-link align-middle lightbox mfp-iframe mt-10">
+                                                    <div class="work-img">
+                                                        <div class="work-img-bg"></div>
+                                                            <img src="images/showreel.jpg" alt="Work Description" class="img-lazy-work" />
+                                                    </div>
+                                                    <div class="work-intro">
+                                                        <h3 class="work-title"><i class="icon-play size-30 me-1"></i></h3>
+                                                        <!--div class="work-descr">Trailer</div-->
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>    
+                                    <!-- End Work Video -->
+                                
+                                </div>                               
+                            </div>  
+                        </div>                       
                         
                     </div>
                 </section>
-                <!-- End Portfolio Section -->
-                
+                <!-- End Section -->
                 
                 <!-- Divider -->
-                <hr class="mt-0 mb-0"/>
-                <!-- End Divider -->
-                
+                <hr class="mt-0 mb-0" />
+                <!-- End Divider -->    
                 
                 <!-- Call Action Section -->
                 <section class="page-section p-5">
@@ -266,10 +261,10 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                         <div class="row text-center wow fadeInUp">
                             <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
                                 <p class="section-descr p-1">
-                                    Tell us what you want to create.
+                                    Find out more.
                                 </p>
                                 <div class="local-scroll">
-                                    <a href="./#contact" class="btn btn-mod btn-circle btn-large btn-hover-anim"><span>Contact</span></a>
+                                    <a href="./portfolio" class="btn btn-mod btn-circle btn-large btn-hover-anim"><span>All Portfolio</span></a>
                                 </div>
                             </div>                             
                         </div>

@@ -6227,10 +6227,12 @@ img.services-image{
 .team-item-image{
     position: relative;
     overflow: hidden;
+    border-radius: 20px;
+    
 }
 .team-item-image img{
     width: 100%;
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
 }
 .team-item-detail{ 
     display: inline-block;
@@ -6285,8 +6287,8 @@ img.services-image{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     color: var(--color-dark-1);
     text-decoration: none;
     transition: var(--transition-default);

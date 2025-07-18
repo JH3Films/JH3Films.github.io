@@ -9363,7 +9363,7 @@ a.portfolio-5-link:hover .portfolio-5-title span{
     font-size: 32px;
     font-family: var(--font-alt);
     font-weight: 500;
-    letter-spacing: 0.01em;
+    letter-spacing: -0.005em;
 }
 .contact-1-text{
     font-size: 30px;
@@ -9391,6 +9391,7 @@ a.portfolio-5-link:hover .portfolio-5-title span{
     background-position: 0 100%;
     background-repeat: no-repeat;
     transition: all .27s var(--ease-out-medium);
+    margin-top: 15px;
 }
 .contact-1-link a:hover{
     color: #fff;
